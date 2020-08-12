@@ -1,0 +1,38 @@
+.profile {
+    padding-top: 30px;
+
+    &__thumbnail {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex: 0 0 auto;
+
+        @include media-breakpoint-up(md) {
+            & {
+                margin-right: 15px;
+            }
+        }
+
+        &.thumbnail__small {
+            @include thumbnail(90px);
+        }
+
+        &.thumbnail__normal {
+            @include thumbnail(140px);
+        }
+    }
+
+    &__info {
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+        }
+        h4 {
+            font-size: 22px;
+            font-weight: 400;
+            color: $nickel;
+        }
+        
+    }
+}

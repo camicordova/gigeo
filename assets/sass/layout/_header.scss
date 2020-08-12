@@ -1,14 +1,14 @@
 .header {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: auto;
     z-index: 4;
 
     &__navbar {
-        background-color: $eerie-black;
-        color: $white;
+        background-color: $white;
+        color: $eerie-black;
         height: 96px;
-
+        
         &__logo {
             img {
                 width: 81px;
@@ -22,7 +22,7 @@
             &__icon {
                 background: none !important;
                 font-size: 28px;
-                color: $white !important;
+                color: $eerie-black !important;
             }
 
         }

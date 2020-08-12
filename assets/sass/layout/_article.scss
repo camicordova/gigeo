@@ -1,14 +1,18 @@
 .article {
-
-    &__date {
-        font-size: $medium;
-        font-family: $playfair;
-        color: $raisin-black;
+    &__img {
+        width: 100%;
+        height: 230px;
+        background-position: center;
+        background-size: cover;
+        display: block;
     }
-    &__content {
-        font-size: $medium;
-        font-family: $roboto;
-        color: $raisin-black;
-        line-height: 45px;
+    &__name {
+         display: block;
+         font-weight: 700;
+    }
+    &__meta {
+        display: block;
+        font-weight: 400;
+        color: $nickel;
     }
 }
