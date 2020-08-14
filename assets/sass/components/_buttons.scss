@@ -1,33 +1,13 @@
 .button
 {
-    background-color: $nickel;
-    border-radius: 50px;
+    border-radius: 0px;
     color: $white;
-    height: 51px;
-    line-height: 51px;
-    text-decoration: none;
-    padding: 10px 10px;
-    font-family: $roboto;
-    font-weight: $regular;
-    text-align: center;
+    min-width: 80px;
 
-    &:hover
-    {
-        background-color: $light-gray;
+    &-light-blue {
+        background-color: #92dce5 !important;
     }
-
-    &:focus
-    {
-        border: 3px solid $light-gray;
-    }
-
-    &__medium
-    {
-        width: 182px;
-    }
-
-    &__small
-    {
-        width: 115px;
+    &-red {
+        background-color: #ef6461 !important;
     }
 }

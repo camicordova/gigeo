@@ -11713,21 +11713,47 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
-.article__img {
-  width: 100%;
-  height: 230px;
-  background-position: center;
-  background-size: cover;
-  display: block; }
-
-.article__name {
-  display: block;
-  font-weight: 700; }
-
-.article__meta {
-  display: block;
+/*!
+ * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
   font-weight: 400;
-  color: #6C6E70; }
+  font-display: block;
+  src: url("../webfonts/fa-regular-400.eot");
+  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+
+.article {
+  flex: 1 1 100%;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .article {
+      flex: 0 0 25%; } }
+  .article__img {
+    width: 100%;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+    display: block; }
+    @media (min-width: 768px) {
+      .article__img {
+        height: 150px; } }
+  .article__name {
+    display: block;
+    font-weight: 700; }
+    @media (min-width: 768px) {
+      .article__name {
+        font-size: 22px; } }
+  .article__meta {
+    display: block;
+    font-weight: 400;
+    color: #6C6E70; }
 
 .author {
   display: flex;
@@ -11793,8 +11819,17 @@ readers do not read off random characters that represent icons */
     background-color: #FFF;
     color: #121619;
     height: 96px; }
-    .header__navbar__logo img {
-      width: 81px; }
+    .header__navbar__logo {
+      font-size: 40px;
+      font-weight: 500;
+      position: relative; }
+      .header__navbar__logo sup {
+        font-size: 14px;
+        font-weight: 600;
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: -20px; }
     .header__navbar__toggler {
       border: none;
       text-align: center; }
@@ -11803,7 +11838,10 @@ readers do not read off random characters that represent icons */
         font-size: 28px;
         color: #121619 !important; }
     .header__navbar__menu .nav-link {
-      color: #FFF !important; }
+      color: #121619 !important; }
+      @media (min-width: 768px) {
+        .header__navbar__menu .nav-link {
+          font-size: 24px; } }
       .header__navbar__menu .nav-link.active {
         color: #E56353 !important; }
 
@@ -11814,33 +11852,26 @@ readers do not read off random characters that represent icons */
     height: 34px; }
 
 .title {
-  color: #121619; }
+  color: #121619;
+  font-size: 26px; }
 
 .banner {
   width: 100%;
   height: 90px;
   background-position: center;
   background-size: cover; }
+  @media (min-width: 768px) {
+    .banner {
+      height: 180px; } }
 
 .button {
-  background-color: #6C6E70;
-  border-radius: 50px;
+  border-radius: 0px;
   color: #FFF;
-  height: 51px;
-  line-height: 51px;
-  text-decoration: none;
-  padding: 10px 10px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  text-align: center; }
-  .button:hover {
-    background-color: #D1D1D1; }
-  .button:focus {
-    border: 3px solid #D1D1D1; }
-  .button__medium {
-    width: 182px; }
-  .button__small {
-    width: 115px; }
+  min-width: 80px; }
+  .button-light-blue {
+    background-color: #92dce5 !important; }
+  .button-red {
+    background-color: #ef6461 !important; }
 
 a.link {
   font-family: "Roboto", sans-serif;
@@ -11874,7 +11905,10 @@ a.link {
       border-color: #121619; }
 
 .profile {
-  padding-top: 30px; }
+  flex: 1 1 100%; }
+  @media (min-width: 768px) {
+    .profile-wrapper {
+      border-bottom: 1px solid #D1D1D1; } }
   .profile__thumbnail {
     background-position: center;
     background-size: cover;

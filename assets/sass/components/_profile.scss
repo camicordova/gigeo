@@ -1,5 +1,13 @@
 .profile {
-    padding-top: 30px;
+    flex: 1 1 100%;
+    
+    &-wrapper {
+        @include media-breakpoint-up(md) {
+            & {
+                border-bottom: 1px solid $light-gray;
+            }   
+        }
+    } 
 
     &__thumbnail {
         background-position: center;

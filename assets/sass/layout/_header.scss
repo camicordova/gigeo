@@ -8,10 +8,19 @@
         background-color: $white;
         color: $eerie-black;
         height: 96px;
-        
+
         &__logo {
-            img {
-                width: 81px;
+            font-size: 40px;
+            font-weight: 500;
+            position: relative;
+
+            sup {
+                font-size: 14px;
+                font-weight: 600;
+                display: block;
+                position: absolute;
+                top: 5px;
+                right: -20px;
             }
         }
 
@@ -29,7 +38,11 @@
 
         &__menu {
             .nav-link {
-                color: $white !important;
+                color: $eerie-black !important;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 24px;
+                }
 
                 &.active {
                     color: $fuzzy-wuzzy !important;

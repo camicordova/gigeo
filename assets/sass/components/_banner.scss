@@ -3,4 +3,8 @@
     height: 90px;
     background-position: center;
     background-size: cover;
+
+    @include media-breakpoint-up(md) {
+        height: 180px;
+    }
 }
